@@ -1,93 +1,3 @@
-const suggestSlide = [
-  {
-    titleEng: "Shoulders Width",
-    titleTh: "วิธีวัดความกว้างไหล่",
-    imgPath: "./asset/images/suit-form/shoulder/",
-    slide: [
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา",
-      },
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา",
-      },
-    ],
-  },
-  {
-    titleEng: "Sleeve Length",
-    titleTh: "วิธีวัดความกว้างไหล่",
-    imgPath: "./asset/images/suit-form/sleeve/",
-    slide: [
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา",
-      },
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา",
-      },
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา",
-      },
-    ],
-  },
-  {
-    titleEng: "Half Back Width",
-    titleTh: "วิธีวัดบ่าหลัง",
-    imgPath: "./asset/images/suit-form/half-back/",
-    slide: [
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-    ],
-  },
-  {
-    titleEng: "Half Chest Width",
-    titleTh: "วิธีวัดบ่าหน้า",
-    imgPath: "./asset/images/suit-form/half-chest/",
-    slide: [
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-    ],
-  },
-  {
-    titleEng: "Chest Width",
-    titleTh: "วิธีวัดอก",
-    imgPath: "./asset/images/suit-form/chest/",
-    slide: [
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-    ],
-  },
-  {
-    titleEng: "Stomach Width",
-    titleTh: "วิธีวัดเอวเสื้อ",
-    imgPath: "./asset/images/suit-form/stomach/",
-    slide: [
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-      {
-        desc: "เริ่มจากการนำสายวัดฝั่งซ้ายมือ วางในตำแหน่งตะเข็บรอยต่อช่วงไหล่ซ้ายของเสื้อเชิ้ต แล้วดึงสายวัดไปทางขวา (พาดบริเวณบ่า) ให้สายวัดด้านขวาไปจรดบริเวณ ตำแหน่งตะเข็บรอยต่อช่วงไหล่ขวาของเสื้อเชิ้ต",
-      },
-    ],
-  },
-];
-
 const inputs = document.querySelectorAll("input");
 const clearButton = document.querySelector("#clear-form-button");
 
@@ -106,7 +16,7 @@ const changeSlideContent = (contentIndex) => {
       (slideContent.innerHTML += `
           <div class="w-full h-full splide__slide">
               <div class="h-[73%]">
-                  <img src="${suggestSlide[contentIndex].imgPath}${index + 1}.png" alt="" class="w-full h-full object-cover" />
+                  <img src="${suggestSlide[contentIndex].imgPath}${value.imgName}" alt="" class="w-full h-full object-cover" />
               </div>
               <div class="text-center 2xl:p-8 p-6 h-[25%] flex flex-col xl:max-h-[15vh]">
                   <div>
@@ -119,27 +29,39 @@ const changeSlideContent = (contentIndex) => {
               </div>
           </div>`)
   );
+
+  const slideButton = document.querySelectorAll(".splide__arrows");
+  for (const button of slideButton) {
+    if (suggestSlide[contentIndex].slide.length <= 1) {
+      button.style.display = "none";
+    } else {
+      button.style.display = "block";
+    }
+  }
   slide.go(0);
   slide.refresh();
 };
 
-
-
+// Add addEventListener for all input
 for (const [index, item] of inputs.entries()) {
   item.addEventListener("focus", () => {
     index <= suggestSlide.length - 1 && changeSlideContent(index);
   });
+  // item.addEventListener("keyup", () => {
+  //   item.value = item.value.replace(/\D/, "");
+  // });
 }
 
-const initSlide = () => {
-  changeSlideContent(0);
-  slide.refresh();
-};
-
+// Clear input value
 clearButton.addEventListener("click", () => {
   for (const item of inputs) {
     item.value = "";
   }
 });
+
+const initSlide = () => {
+  changeSlideContent(0);
+  slide.refresh();
+};
 
 initSlide();

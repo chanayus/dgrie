@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="http://www.dgrie.com/media/favicon/default/favicon.png" type="image/x-icon">
+    <link rel="icon" href="http://www.dgrie.com/media/favicon/default/favicon.png" type="image/x-icon" />
     <title>DGRIE</title>
 
     <!-- Font -->
@@ -24,6 +24,7 @@
     </script>
 
     <!-- Scripts -->
+    <script defer src="./asset/scripts/slideSuitData.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
     <script defer src="./asset/scripts/suit-form.js"></script>
   </head>
@@ -46,7 +47,7 @@
 
     <main class="flex xl:flex-row flex-col flex-1 overflow-hidden">
       <section id="suggest-carousel" class="splide relative xl:w-[70%]">
-        <div class="splide__arrows absolute z-10 top-1/2 translate-y-[-50%] left-[20px]">
+        <div class="splide__arrows absolute z-10 md:top-1/2 top-[25%] translate-y-[-50%] left-[20px]">
           <button class="splide__arrow splide__arrow--prev w-10 h-10 rounded-full bg-white grid place-items-center">
             <img src="./asset/icons/arrow-left.svg" alt="prev-icon" />
           </button>
@@ -56,7 +57,7 @@
           <ul class="splide__list" id="suggest-slide-container"></ul>
         </div>
 
-        <div class="splide__arrows absolute z-10 top-1/2 translate-y-[-50%] right-[20px]">
+        <div class="splide__arrows absolute z-10 md:top-1/2 top-[25%] translate-y-[-50%] right-[20px]">
           <button class="splide__arrow splide__arrow--next w-10 h-10 rounded-full bg-white grid place-items-center">
             <img src="./asset/icons/arrow-right.svg" alt="next-icon" />
           </button>
@@ -64,7 +65,7 @@
 
         <ul class="splide__pagination mb-8 flex w-full justify-center"></ul>
       </section>
-      <section class="xl:w-[30%] xl:min-w-[400px] pt-10 xl:overflow-y-scroll relative border-t ">
+      <section class="xl:w-[30%] xl:min-w-[400px] pt-10 xl:overflow-y-scroll relative border-t">
         <div class="text-center mb-10">
           <h3 class="text-2xl">Suit: Jacket & Pants</h3>
           <h4 class="font-light">เสื้อสูทและกางเกง</h4>
@@ -77,42 +78,42 @@
             <p>Shoulders Width</p>
             <p>ความกว้างไหล่</p>
           </div>
-          <input type="text" required placeholder="-" id="shoulder" />
+          <input type="number" required min="0" placeholder="-" id="shoulder" />
         </div>
         <div class="input-item">
           <div>
             <p>Sleeve Length</p>
             <p>ความยาวแขน</p>
           </div>
-          <input type="text" required placeholder="-" id="sleeve" />
+          <input type="number" required min="0" placeholder="-" id="sleeve" />
         </div>
         <div class="input-item">
           <div>
             <p>Half Back Width</p>
             <p>ความกว้างบ่าหลัง</p>
           </div>
-          <input type="text" required placeholder="-" id="half-back" />
+          <input type="number" required min="0" placeholder="-" id="half-back" />
         </div>
         <div class="input-item">
           <div>
             <p>Half Chest Width</p>
             <p>ความกว้างบ่าหน้า</p>
           </div>
-          <input type="text" required placeholder="-" id="half-chest" />
+          <input type="number" required min="0" placeholder="-" id="half-chest" />
         </div>
         <div class="input-item">
           <div>
             <p>Chest Width</p>
             <p>ความกว้างอก</p>
           </div>
-          <input type="text" required placeholder="-" id="chest" />
+          <input type="number" required min="0" placeholder="-" id="chest" />
         </div>
         <div class="input-item">
           <div>
             <p>Stomach Width</p>
             <p>ความกว้างเอวเสื้อ</p>
           </div>
-          <input type="text" required placeholder="-" id="stomach" />
+          <input type="number" required min="0" placeholder="-" id="stomach" />
         </div>
 
         <div class="underline">
@@ -124,42 +125,42 @@
             <p>Bicep Width</p>
             <p>ความกว้างต้นแขน</p>
           </div>
-          <input type="text" required placeholder="-" id="bicep" />
+          <input type="number" required min="0" placeholder="-" id="bicep" />
         </div>
         <div class="input-item">
           <div>
             <p>Armhole</p>
             <p>รอบวงแขน</p>
           </div>
-          <input type="text" required placeholder="-" id="armhole" />
+          <input type="number" required min="0" placeholder="-" id="armhole" />
         </div>
         <div class="input-item">
           <div>
             <p>Wrist Width</p>
             <p>ความกว้างรอบข้อมือ</p>
           </div>
-          <input type="text" required placeholder="-" id="wrist" />
+          <input type="number" required min="0" placeholder="-" id="wrist" />
         </div>
         <div class="input-item">
           <div>
             <p>Jacket Length</p>
             <p>ความยาวเสื้อ</p>
           </div>
-          <input type="text" required placeholder="-" id="jacket" />
+          <input type="number" required min="0" placeholder="-" id="jacket" />
         </div>
         <div class="input-item">
           <div>
             <p>Hips Width</p>
             <p>ความกว้างสะโพก</p>
           </div>
-          <input type="text" required placeholder="-" id="hips" />
+          <input type="number" required min="0" placeholder="-" id="hips" />
         </div>
         <div class="input-item">
           <div>
             <p>Waist Width</p>
             <p>ขนาดเอวกางเกง</p>
           </div>
-          <input type="text" required placeholder="-" id="waist" />
+          <input type="number" required min="0" placeholder="-" id="waist" />
         </div>
 
         <div class="underline">
@@ -171,42 +172,42 @@
             <p>Thigh Width</p>
             <p>ความกว้างต้นขา</p>
           </div>
-          <input type="text" required placeholder="-" id="thigh" />
+          <input type="number" required min="0" placeholder="-" id="thigh" />
         </div>
         <div class="input-item">
           <div>
             <p>Crotch Length</p>
             <p>ความยาวเป้ากางเกง</p>
           </div>
-          <input type="text" required placeholder="-" id="crotch" />
+          <input type="number" required min="0" placeholder="-" id="crotch" />
         </div>
         <div class="input-item">
           <div>
             <p>Knee Width</p>
             <p>ความกว้างเข่า</p>
           </div>
-          <input type="text" required placeholder="-" id="knee" />
+          <input type="number" required min="0" placeholder="-" id="knee" />
         </div>
         <div class="input-item">
           <div>
             <p>Calf Width</p>
             <p>ความกว้างน่อง</p>
           </div>
-          <input type="text" required placeholder="-" id="calf" />
+          <input type="number" required min="0" placeholder="-" id="calf" />
         </div>
         <div class="input-item">
           <div>
             <p>Hem Width</p>
             <p>ความกว้างปลายขา</p>
           </div>
-          <input type="text" required placeholder="-" id="hem" />
+          <input type="number" required min="0" placeholder="-" id="hem" />
         </div>
         <div class="input-item mb-14">
           <div>
             <p>Pants Length</p>
             <p>ความยาวขากางเกง</p>
           </div>
-          <input type="text" required placeholder="-" id="pants" />
+          <input type="number" required min="0" placeholder="-" id="pants" />
         </div>
 
         <div class="button-wrapper flex justify-center border-t gap-6 shadow-sm md:px-14 px-6 py-6 sticky bottom-[0px] w-full bg-white">
