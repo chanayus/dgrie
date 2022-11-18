@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" hidden>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="http://www.dgrie.com/media/favicon/default/favicon.png" type="image/x-icon">
+    <title>DGRIE</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;600&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./asset/styles/pages/suit-form/suit-form.css" />
+
+    <!-- Tailwind -->
+    <script type="module">
+      import { setup, apply } from "https://cdn.skypack.dev/twind/shim";
+      setup({
+        mode: "silent",
+      });
+    </script>
+
+    <!-- Scripts -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script defer src="./asset/scripts/suit-form.js"></script>
+  </head>
+  <body class="flex flex-col w-full xl:h-screen">
+    <nav class="flex bg-white justify-between items-center p-4 relative shadow">
+      <button>
+        <img src="./asset/icons/hamburger.svg" alt="menu-button" />
+      </button>
+
+      <a href="./index.html" class="absolute left-1/2 translate-x-[-50%]">
+        <img src="./asset/images/logo.svg" alt="logo" width="90" />
+      </a>
+
+      <div class="flex gap-4">
+        <a href=""><img src="./asset/icons/user.svg" alt="user-icon" /></a>
+        <a href=""><img src="./asset/icons/heart.svg" alt="heart-icon" /></a>
+        <a href=""><img src="./asset/icons/bag.svg" alt="bag-icon" /></a>
+      </div>
+    </nav>
+
+    <main class="flex xl:flex-row flex-col flex-1 overflow-hidden">
+      <section id="suggest-carousel" class="splide relative xl:w-[70%]">
+        <div class="splide__arrows absolute z-10 top-1/2 translate-y-[-50%] left-[20px]">
+          <button class="splide__arrow splide__arrow--prev w-10 h-10 rounded-full bg-white grid place-items-center">
+            <img src="./asset/icons/arrow-left.svg" alt="prev-icon" />
+          </button>
+        </div>
+
+        <div class="splide__track h-[96%] w-full">
+          <ul class="splide__list" id="suggest-slide-container"></ul>
+        </div>
+
+        <div class="splide__arrows absolute z-10 top-1/2 translate-y-[-50%] right-[20px]">
+          <button class="splide__arrow splide__arrow--next w-10 h-10 rounded-full bg-white grid place-items-center">
+            <img src="./asset/icons/arrow-right.svg" alt="next-icon" />
+          </button>
+        </div>
+
+        <ul class="splide__pagination mb-8 flex w-full justify-center"></ul>
+      </section>
+      <section class="xl:w-[30%] xl:min-w-[400px] pt-10 xl:overflow-y-scroll relative border-t ">
+        <div class="text-center mb-10">
+          <h3 class="text-2xl">Suit: Jacket & Pants</h3>
+          <h4 class="font-light">เสื้อสูทและกางเกง</h4>
+        </div>
+
+        <p class="text-right mb-2 px-[clamp(15px,3vw,56px)]">Inch / นิ้ว</p>
+
+        <div class="input-item">
+          <div>
+            <p>Shoulders Width</p>
+            <p>ความกว้างไหล่</p>
+          </div>
+          <input type="text" required placeholder="-" id="shoulder" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Sleeve Length</p>
+            <p>ความยาวแขน</p>
+          </div>
+          <input type="text" required placeholder="-" id="sleeve" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Half Back Width</p>
+            <p>ความกว้างบ่าหลัง</p>
+          </div>
+          <input type="text" required placeholder="-" id="half-back" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Half Chest Width</p>
+            <p>ความกว้างบ่าหน้า</p>
+          </div>
+          <input type="text" required placeholder="-" id="half-chest" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Chest Width</p>
+            <p>ความกว้างอก</p>
+          </div>
+          <input type="text" required placeholder="-" id="chest" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Stomach Width</p>
+            <p>ความกว้างเอวเสื้อ</p>
+          </div>
+          <input type="text" required placeholder="-" id="stomach" />
+        </div>
+
+        <div class="underline">
+          <div></div>
+        </div>
+
+        <div class="input-item">
+          <div>
+            <p>Bicep Width</p>
+            <p>ความกว้างต้นแขน</p>
+          </div>
+          <input type="text" required placeholder="-" id="bicep" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Armhole</p>
+            <p>รอบวงแขน</p>
+          </div>
+          <input type="text" required placeholder="-" id="armhole" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Wrist Width</p>
+            <p>ความกว้างรอบข้อมือ</p>
+          </div>
+          <input type="text" required placeholder="-" id="wrist" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Jacket Length</p>
+            <p>ความยาวเสื้อ</p>
+          </div>
+          <input type="text" required placeholder="-" id="jacket" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Hips Width</p>
+            <p>ความกว้างสะโพก</p>
+          </div>
+          <input type="text" required placeholder="-" id="hips" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Waist Width</p>
+            <p>ขนาดเอวกางเกง</p>
+          </div>
+          <input type="text" required placeholder="-" id="waist" />
+        </div>
+
+        <div class="underline">
+          <div></div>
+        </div>
+
+        <div class="input-item">
+          <div>
+            <p>Thigh Width</p>
+            <p>ความกว้างต้นขา</p>
+          </div>
+          <input type="text" required placeholder="-" id="thigh" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Crotch Length</p>
+            <p>ความยาวเป้ากางเกง</p>
+          </div>
+          <input type="text" required placeholder="-" id="crotch" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Knee Width</p>
+            <p>ความกว้างเข่า</p>
+          </div>
+          <input type="text" required placeholder="-" id="knee" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Calf Width</p>
+            <p>ความกว้างน่อง</p>
+          </div>
+          <input type="text" required placeholder="-" id="calf" />
+        </div>
+        <div class="input-item">
+          <div>
+            <p>Hem Width</p>
+            <p>ความกว้างปลายขา</p>
+          </div>
+          <input type="text" required placeholder="-" id="hem" />
+        </div>
+        <div class="input-item mb-14">
+          <div>
+            <p>Pants Length</p>
+            <p>ความยาวขากางเกง</p>
+          </div>
+          <input type="text" required placeholder="-" id="pants" />
+        </div>
+
+        <div class="button-wrapper flex justify-center border-t gap-6 shadow-sm md:px-14 px-6 py-6 sticky bottom-[0px] w-full bg-white">
+          <button id="clear-form-button" class="w-full border rounded py-[10px] max-w-[300px]">Clear All</button>
+          <a href="" class="w-full rounded py-3 next-button text-center">Next</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@import "./splide";
+
+* {
+    font-family: "Kanit", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    outline: none !important;
+    scroll-behavior: smooth;
+    color: #303030;
+    box-sizing: border-box;
+}
+
+.header-font {
+    font-family: "Cormorant Garamond", serif;
+}
+
+input {
+    width: 100%;
+    padding: 10px !important;
+    border-radius: 4px;
+    border: 1px solid #dfdfdf;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
