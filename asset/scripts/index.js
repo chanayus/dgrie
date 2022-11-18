@@ -7,12 +7,12 @@ window.addEventListener("DOMContentLoaded", () => {
     gap: 10,
     pagination: false,
     breakpoints: {
-      1024: {
+      1136: {
         perPage: 2,
         padding: "0",
         gap: 0,
       },
-      640: {
+      680: {
         perPage: 1,
         padding: "0",
         gap: 0,
