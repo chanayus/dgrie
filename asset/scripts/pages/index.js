@@ -20,8 +20,8 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   }).mount();
   gsap.fromTo("#backdrop-header", { opacity: 0 }, { opacity: 1, delay: 0.25, duration: 1 });
-  gsap.fromTo("#brand-name", { opacity: 0, y: 50 }, { opacity: 1, y: 0, delay: 0.5, ease: "circ" });
-  gsap.fromTo("#caption", { opacity: 0, y: 50 }, { opacity: 1, y: 0, delay: 0.75, ease: "circ" });
-  gsap.fromTo("#start-button", { opacity: 0, y: 50 }, { opacity: 1, y: 0, delay: 1, ease: "circ" });
-  gsap.fromTo("#hero-arrow-down", { opacity: 0, y: 50 }, { opacity: 1, y: 0, delay: 1.25, ease: "circ" });
+  gsap.fromTo("#brand-name", { opacity: 0, y: 50 }, { opacity: 1, y: 0, delay: 0.35, ease: "circ" });
+  gsap.fromTo("#caption", { opacity: 0, y: 50 }, { opacity: 1, y: 0, delay: 0.55, ease: "circ" });
+  gsap.fromTo("#start-button", { opacity: 0, y: 50 }, { opacity: 1, y: 0, delay: 0.75, ease: "circ" });
+  gsap.fromTo("#hero-arrow-down", { opacity: 0, y: 50 }, { opacity: 1, y: 0, delay: 1.05, ease: "circ" });
 });
