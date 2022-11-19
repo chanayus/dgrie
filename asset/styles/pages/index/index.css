@@ -371,13 +371,34 @@ header img {
 #product-type-container .splide__slide {
   position: relative;
 }
-#product-type-container .splide__slide h4 {
+#product-type-container .splide__slide .type-text {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
-  color: #fff;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0 1px 7px rgba(0, 0, 0, 0.75);
+}
+#product-type-container .splide__slide .type-text h4 {
+  color: #fff;
   font-size: clamp(32px, 4vw, 34px);
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#product-type-container .splide__slide .type-text p {
+  color: #fff;
+  max-width: 30ch;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#product-type-container .splide__slide .type-text .underline {
+  margin-block: 15px;
+  width: 10%;
+  height: 2px;
+  background: #fff;
 }/*# sourceMappingURL=index.css.map */
