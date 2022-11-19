@@ -32,17 +32,19 @@
   <body class="flex flex-col justify-between w-full h-screen">
     <main-nav></main-nav>
 
-    <main class="mt-[10vh] mb-[15vh] flex flex-col items-center flex-1">
+    <main class="mt-[10vh] mb-[15vh] flex-1">
       <h2 class="text-center text-[1.25rem]">
         กรุณาใส่ชื่อ และเบอร์โทรศัพท์ <br />
         เพื่อดำเนินการต่อ
       </h2>
 
-      <form class="form-container max-w-[300px]">
-        <input type="text" id="customer-name-input" required placeholder="ชื่อ - นามสกุล / Name" class="w-full mt-10 mb-4" />
-        <input type="text" id="phone-number-input" required placeholder="เบอร์โทรศัพท์ / Phone" class="w-full mb-6" />
+      <form action="">
+        <div class="form-container max-w-[300px] mx-auto">
+          <input type="text" id="customer-name-input" required placeholder="ชื่อ - นามสกุล / Name" class="w-full mt-10 mb-4" />
+          <input type="text" id="phone-number-input" required placeholder="เบอร์โทรศัพท์ / Phone" class="w-full mb-6" />
+        </div>
+        <a href="./suit-form.html" class="next-button w-full block mx-auto">ถัดไป</a>
       </form>
-      <a href="./suit-form.html" class="next-button">ถัดไป</a>
     </main>
 
     <footer class="flex justify-between items-center py-4 px-6 border-t lg:flex-row flex-col">
