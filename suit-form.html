@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./asset/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./asset/images/favicon.png" type="image/x-icon" />
     <title>DGRIE</title>
 
     <!-- Font -->
@@ -23,27 +23,16 @@
       });
     </script>
 
+    <!-- Components -->
+    <script defer src="./asset/scripts/components/navbar.js"></script>
+
     <!-- Scripts -->
     <script defer src="./asset/scripts/slideSuitData.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-    <script defer src="./asset/scripts/suit-form.js"></script>
+    <script defer src="./asset/scripts/pages/suit-form.js"></script>
   </head>
   <body class="flex flex-col w-full xl:h-screen">
-    <nav class="flex bg-white justify-between items-center p-4 relative shadow">
-      <button>
-        <img src="./asset/icons/hamburger.svg" alt="menu-button" />
-      </button>
-
-      <a href="./index.html" class="absolute left-1/2 translate-x-[-50%]">
-        <img src="./asset/images/logo.svg" alt="logo" width="90" />
-      </a>
-
-      <div class="flex gap-4">
-        <a href=""><img src="./asset/icons/user.svg" alt="user-icon" /></a>
-        <a href=""><img src="./asset/icons/heart.svg" alt="heart-icon" /></a>
-        <a href=""><img src="./asset/icons/bag.svg" alt="bag-icon" /></a>
-      </div>
-    </nav>
+    <main-nav></main-nav>
 
     <main class="flex xl:flex-row flex-col flex-1 overflow-hidden">
       <section id="suggest-carousel" class="splide relative xl:w-[70%]">
