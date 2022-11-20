@@ -340,6 +340,7 @@
   scroll-behavior: smooth;
   color: #303030;
   box-sizing: border-box;
+  touch-action: manipulation;
 }
 
 .header-font {
@@ -355,6 +356,10 @@ input {
 
 .text-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
+}
+
+.aspect-video {
+  aspect-ratio: 16/9;
 }
 
 header {
