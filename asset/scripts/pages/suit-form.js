@@ -1,12 +1,13 @@
 const inputs = document.querySelectorAll("input");
 const clearButton = document.querySelector("#clear-form-button");
 
-const slide = new Splide("#suggest-carousel", {
+const slideOption = {
   type: "loop",
   perPage: 1,
   perMove: 1,
   pagination: true,
-}).mount();
+};
+const slide = new Splide("#suggest-carousel", slideOption).mount();
 
 const changeSlideContent = (contentIndex) => {
   const slideContent = document.querySelector("#suggest-slide-container");
@@ -31,13 +32,16 @@ const changeSlideContent = (contentIndex) => {
   );
 
   const slideButton = document.querySelectorAll(".splide__arrows");
+  const totalSlide = suggestSlide[contentIndex].slide.length;
+
   for (const button of slideButton) {
-    if (suggestSlide[contentIndex].slide.length <= 1) {
-      button.style.display = "none";
+    if (totalSlide <= 1) {
+      button.className = button.className.replace("block", "hidden");
     } else {
-      button.style.display = "block";
+      button.className = button.className.replace("hidden", "block");
     }
   }
+  slide.options = { ...slideOption, drag: totalSlide <= 1 ? false : true };
   slide.go(0);
   slide.refresh();
 };
