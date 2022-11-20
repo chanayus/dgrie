@@ -11,6 +11,7 @@ const slide = new Splide("#suggest-carousel", slideOption).mount();
 
 const changeSlideContent = (contentIndex) => {
   const slideContent = document.querySelector("#suggest-slide-container");
+
   slideContent.innerHTML = "";
   suggestSlide[contentIndex].slide.map(
     (value, index) =>
@@ -34,6 +35,7 @@ const changeSlideContent = (contentIndex) => {
   const slideButton = document.querySelectorAll(".splide__arrows");
   const totalSlide = suggestSlide[contentIndex].slide.length;
 
+  // Hide arrow button if Slide page less than 2
   for (const button of slideButton) {
     if (totalSlide <= 1) {
       button.className = button.className.replace("block", "hidden");
@@ -41,6 +43,8 @@ const changeSlideContent = (contentIndex) => {
       button.className = button.className.replace("hidden", "block");
     }
   }
+
+  // refresh Slides
   slide.options = { ...slideOption, drag: totalSlide <= 1 ? false : true };
   slide.go(0);
   slide.refresh();
