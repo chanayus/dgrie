@@ -11,7 +11,7 @@ class Navbar extends HTMLElement {
                 <img src="./asset/images/logo.svg" alt="logo" width="90" />
             </a>
 
-            <div class="flex gap-4">
+            <div class="flex md:gap-4 gap-3">
                 <a href=""><img src="./asset/icons/user.svg" alt="user-icon" /></a>
                 <a href=""><img src="./asset/icons/heart.svg" alt="heart-icon" /></a>
                 <a href=""><img src="./asset/icons/bag.svg" alt="bag-icon" /></a>
