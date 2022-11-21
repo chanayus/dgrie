@@ -7,8 +7,8 @@
     justify-content: space-between;
     margin: 20px 0;
     padding-inline: clamp(15px, 2.8vw, 56px);
-
     p {
+        font-size: clamp(14px,1vw,16px);
         white-space: nowrap;
         &:last-of-type {
             font-weight: 300;

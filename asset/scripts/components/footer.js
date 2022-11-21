@@ -1,9 +1,9 @@
 class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <footer class="flex justify-between items-center py-4 px-6 border-t lg:flex-row flex-col">
+    <footer class="flex text-[clamp(12px,1vw,16px)] justify-between items-center py-4 px-6 border-t lg:flex-row flex-col">
       <p class="lg:mb-0 mb-8">Terms & Conditions</p>
-      <div class="flex items-center gap-x-6 gap-y-2 lg:flex-row flex-col">
+      <div class="flex items-center gap-x-6 gap-y-2  lg:flex-row flex-col">
         <p>Phone : 0636394563</p>
         <p>Email : contact@dgrie.com</p>
         <p>Facebook : facebook/dgrie.com</p>
