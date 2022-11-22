@@ -390,7 +390,7 @@ input {
   padding-inline: clamp(15px, 2.8vw, 56px);
 }
 .input-item p {
-  font-size: clamp(14px, 1vw, 16px);
+  font-size: clamp(12px, 1vw, 16px);
   white-space: nowrap;
 }
 .input-item p:last-of-type {
