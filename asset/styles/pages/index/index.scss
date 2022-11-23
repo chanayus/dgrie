@@ -9,6 +9,22 @@ header {
         height: 100%;
         object-fit: cover;
     }
+    #brand-name {
+        font-size: clamp(28px, 7vw, 60px);
+        @supports not (font-size: clamp(29px, 7vw, 60px)) {
+            & {
+                font-size: 6vh;
+            }
+        }
+    }
+    #caption {
+        font-size: clamp(18px, 4vw, 28px);
+        @supports (font-size: clamp(18px, 4vw, 28px)) {
+            & {
+                font-size: 3.25vh;
+            }
+        }
+    }
 }
 
 #product-type-container {
@@ -31,6 +47,11 @@ header {
                 color: #fff;
                 font-size: clamp(32px, 2.5vw, 42px);
                 font-weight: 400;
+                @supports not (font-size: clamp(32px, 2.5vw, 42px)) {
+                    & {
+                        font-size: 34px;
+                    }
+                }
             }
             p {
                 color: #fff;

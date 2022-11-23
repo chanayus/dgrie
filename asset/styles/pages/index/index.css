@@ -392,6 +392,22 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+header #brand-name {
+  font-size: clamp(28px, 7vw, 60px);
+}
+@supports not (font-size: clamp(29px, 7vw, 60px)) {
+  header #brand-name {
+    font-size: 6vh;
+  }
+}
+header #caption {
+  font-size: clamp(18px, 4vw, 28px);
+}
+@supports (font-size: clamp(18px, 4vw, 28px)) {
+  header #caption {
+    font-size: 3.25vh;
+  }
+}
 
 #product-type-container .splide__slide {
   position: relative;
@@ -414,6 +430,11 @@ header img {
   color: #fff;
   font-size: clamp(32px, 2.5vw, 42px);
   font-weight: 400;
+}
+@supports not (font-size: clamp(32px, 2.5vw, 42px)) {
+  #product-type-container .splide__slide .type-text h4 {
+    font-size: 34px;
+  }
 }
 #product-type-container .splide__slide .type-text p {
   color: #fff;

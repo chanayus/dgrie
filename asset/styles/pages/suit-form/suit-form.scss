@@ -7,6 +7,11 @@
     justify-content: space-between;
     margin: 20px 0;
     padding-inline: clamp(15px, 2.8vw, 56px);
+    @supports not (padding-inline: clamp(15px, 2.8vw, 56px)) {
+        & {
+            padding-inline: 6vmin;
+        }
+    }
     p {
         font-size: clamp(12px, 1vw, 16px);
         white-space: nowrap;
