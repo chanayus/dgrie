@@ -391,7 +391,7 @@ input {
 }
 @supports not (padding-inline: clamp(15px, 2.8vw, 56px)) {
   .input-item {
-    padding-inline: 6vmin;
+    padding: 0 6vmin;
   }
 }
 .input-item p {
