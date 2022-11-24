@@ -18,10 +18,10 @@ class Navbar extends HTMLElement {
             </div>
         
         </div>
-        <div class="absolute translate-y-[-150%] shadow z-20 w-full p-4 bg-white flex flex-col gap-y-4 duration-200" id="nav-menu">
+        <div class="absolute translate-y-[-150%] shadow z-20 w-full p-4 bg-white flex flex-col duration-200" id="nav-menu">
             <a href="">Home</a>
-            <a href="">Categories</a>
-            <a href="">About</a>
+            <a href="" class="mt-4">Categories</a>
+            <a href="" class="mt-4">About</a>
         </div>
     </nav>
 
