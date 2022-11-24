@@ -387,12 +387,7 @@ input {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
-  padding-inline: clamp(15px, 2.8vw, 56px);
-}
-@supports not (padding-inline: clamp(15px, 2.8vw, 56px)) {
-  .input-item {
-    padding: 0 6vmin;
-  }
+  padding: 0 5vmin;
 }
 .input-item p {
   font-size: clamp(12px, 1vw, 16px);
