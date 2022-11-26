@@ -14,12 +14,15 @@ header {
         @supports not (font-size: clamp(29px, 7vw, 60px)) {
             & {
                 font-size: 6vh;
+                @media (max-width: 640px) {
+                    font-size: 36px;
+                }
             }
         }
     }
     #caption {
         font-size: clamp(18px, 4vw, 28px);
-        @supports (font-size: clamp(18px, 4vw, 28px)) {
+        @supports not (font-size: clamp(18px, 4vw, 28px)) {
             & {
                 font-size: 3.25vh;
             }
