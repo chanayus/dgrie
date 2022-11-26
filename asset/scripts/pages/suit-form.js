@@ -17,8 +17,8 @@ const changeSlideContent = (contentIndex) => {
     (value, index) =>
       (slideContent.innerHTML += `
           <div class="w-full h-full splide__slide">
-              <div class="h-[73%] max-h-[70vh] overflow-hidden w-full aspect-video">
-                  <img src="${suggestSlide[contentIndex].imgPath}${value.imgName}" alt="" class="w-full h-full  ${value.vertical ? "object-contain" : "object-cover"}" />
+              <div class="min-h-[50vh] h-[73%] max-h-[70vh] overflow-hidden relative w-full aspect-video">
+                  <img src="${suggestSlide[contentIndex].imgPath}${value.imgName}" alt="" class="absolute w-full h-full ${value.vertical ? "object-contain" : "object-cover"}" />
               </div>
               <div class="text-center 2xl:p-8 p-4 h-[25%] flex flex-col xl:max-h-[15vh]">
                   <div>
